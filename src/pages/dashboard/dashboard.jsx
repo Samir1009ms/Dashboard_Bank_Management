@@ -2,7 +2,8 @@ import s from "./design/style.module.css";
 import { BiSearch } from "react-icons/bi";
 import { BsFillArrowDownLeftSquareFill } from "react-icons/bs";
 import { BsFillArrowDownRightSquareFill } from "react-icons/bs";
-import { Card } from "../../components/card/card";
+// import { Card } from "../../components/card/card";
+import { CardItem } from "../../components/card/cardItem";
 export function Dashboard() {
   return (
     <section className={s.dashboard}>
@@ -54,14 +55,15 @@ export function Dashboard() {
             <h4 className={s.bottomRightName}>my card</h4>
             <p className={s.bottomRightCardBalans}>card balance</p>
             <p className={s.bottomRightPrice}>$15,595.015</p>
-            <div className={s.cardItem}>
+            {/* <div className={s.cardItem}>
               <Card />
               <p className={s.layers}>
                 <span className={s.pages}></span> 
                 <span className={s.pages}></span>
                 <span className={s.pages}></span>
               </p>
-            </div>
+            </div> */}
+            <CardItem s={s}/>
             <div className={s.bottomRightBtnCont}>
               <button className={s.Btn}>Manage Cards</button>
               <button className={`${s.Btn} ${s.BtnBg}`}>Transfer</button>

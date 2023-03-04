@@ -144,7 +144,10 @@
   align-items: center;
   margin-bottom: 20px;
 }
-.dashboard .dashboardBottom .bottomRight .bottomRightTop .cardItem .layers {
+.dashboard .dashboardBottom .bottomRight .bottomRightTop .cardItem .PaginationCont {
+  height: 40px;
+}
+.dashboard .dashboardBottom .bottomRight .bottomRightTop .cardItem .PaginationCont .pagination {
   height: 40px;
   display: flex;
   -moz-column-gap: 5px;
@@ -152,18 +155,23 @@
   align-items: center;
   justify-content: center;
 }
-.dashboard .dashboardBottom .bottomRight .bottomRightTop .cardItem .layers .pages {
+.dashboard .dashboardBottom .bottomRight .bottomRightTop .cardItem .PaginationCont .pagination .pageItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard .dashboardBottom .bottomRight .bottomRightTop .cardItem .PaginationCont .pagination .pageItem .pageLink {
   background: #6359E9;
   border-radius: 4px;
-  width: 6px;
+  width: 10px;
   height: 6px;
   display: inline-block;
+  border: none;
+  cursor: pointer;
 }
-.dashboard .dashboardBottom .bottomRight .bottomRightTop .cardItem .layers .pages:nth-child(1) {
-  background: #6359E9;
-  border-radius: 4px;
-  width: 20px;
-  height: 3px;
+.dashboard .dashboardBottom .bottomRight .bottomRightTop .cardItem .PaginationCont .pagination .pageItem .active {
+  width: 25px;
+  height: 6px;
 }
 .dashboard .dashboardBottom .bottomRight .bottomRightTop .bottomRightBtnCont {
   display: flex;

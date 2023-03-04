@@ -1,8 +1,9 @@
-import s from "./design/style.module.css";
+import x from "./design/style.module.css";
 import React, { useEffect, useState } from "react";
 import ReactCreditCard from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
 import { cardApi } from "../../api/api";
+import { Pagination } from "./Pagination";
 const cardTotals = [
   {
     name: "testing card",
@@ -20,34 +21,44 @@ const cardTotals = [
   },
 ];
 
-export function Card() {
+export function Card({cardsPerPage,s}) {
   const [card, setCard] = useState();
-  // const [cardV, setCardV] = useState();
   console.log("card", card);
   async function Cartget() {
     try {
       const data = await cardApi.card();
       console.log(data.splice(0,1));
-      setCard(data.splice(0,2));
+      setCard(data);
     } catch {
       console.log("error");
     }
   }
 
-  // function Value(e) {
-  //   const input = e.target.value;
-  //   setCardV(input);
-  // }
 
   useEffect(() => {
     Cartget();
   }, []);
 
+
+//! ---------------------------------------
+const [currentPage, setCurrentPage] = useState(1);
+const handlePageChange = (pageNumber) => {
+  setCurrentPage(pageNumber);
+};
+
+
+const indexOfLastCard = currentPage * cardsPerPage;
+const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+const currentCards = card && card.slice(indexOfFirstCard, indexOfLastCard);
+//! --------------------------------------- 
+
+
   return (
-    <div className={s.top}>
+   <div className={x.cardContainer}>
+     <div className={x.top}>
       {card &&
-        card.map((e, i) => (
-          <div className={s.cardProduct} key={i}>
+        currentCards.map((e, i) => (
+          <div className={x.cardProduct} key={i}>
             <ReactCreditCard
               name={e.name}
               number={e.number}
@@ -56,12 +67,21 @@ export function Card() {
               expiry={e.expiry}
               balance={e.balans}
             />
-            <div className={s.total}>
-              <small className={s.balansText}>current balance</small>
-              <p className={s.price}>$ {e.balans}</p>
+            <div className={x.total}>
+              <small className={x.balansText}>current balance</small>
+              <p className={x.price}>$ {e.balans}</p>
             </div>
           </div>
         ))}
+        
     </div>
+    <Pagination
+         s={s}
+        cardsPerPage={cardsPerPage}
+        totalCards={card&&card.length}
+        currentPage={currentPage}
+        onPageChange={handlePageChange}
+      />
+   </div>
   );
 }
