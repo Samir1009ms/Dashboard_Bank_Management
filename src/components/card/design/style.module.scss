@@ -1,0 +1,62 @@
+.top {
+    background-color: red;
+
+
+
+    .cardProduct {
+
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            background-color: #000;
+            opacity: 0.1;
+            width: 332px;
+            height: 226px;
+            // opacity: 8%;
+            display: block;
+            position: absolute;
+            // z-index: 9999;
+            color: #000;
+            top: -140px;
+            right: -130px;
+            border-radius: 50%;
+        }
+
+        &::before {
+            content: "";
+            background-color: #000;
+            opacity: 0.1;
+            width: 332px;
+            height: 226px;
+            // opacity: 8%;
+            display: block;
+            position: absolute;
+            // z-index: 9999;
+            color: #000;
+            bottom: -140px;
+            left: -117px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .total {
+            position: absolute;
+            top: 10px;
+            left: 25px;
+
+            .balansText {
+                color: #fff;
+                opacity: 0.54;
+                font-size: 14px;
+                text-transform: capitalize;
+            }
+
+            .price {
+                color: #fff;
+                font-size: 28px;
+            }
+        }
+    }
+}

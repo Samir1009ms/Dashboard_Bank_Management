@@ -1,0 +1,98 @@
+.header {
+  width: 245px;
+  height: 749px;
+  left: 346px;
+  top: 278px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #1D1D41;
+  border-radius: 20px;
+  padding: 40px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header .navTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+.header .navTop .logo {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 30px;
+  position: relative;
+  margin-left: -80px;
+}
+.header .navTop .logo .icon {
+  color: #6359E9;
+  font-size: 36px;
+}
+.header .navTop .logo .logoLow {
+  font-size: 11px;
+  position: absolute;
+  top: 13px;
+  right: -20px;
+}
+.header .navTop .hr {
+  width: 78%;
+  border: none;
+  border-bottom: 1px solid #4B4B99;
+}
+.header .navTop .navList {
+  list-style: none;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.header .navTop .navList .navListText {
+  border-radius: 10px;
+  cursor: pointer;
+  width: 80%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  text-transform: capitalize;
+}
+.header .navTop .navList .navListText .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.header .navTop .navList .active {
+  background: #6359E9;
+}
+.header .navTop .navList .hover {
+  background: rgba(99, 89, 233, 0.4745098039);
+}
+.header .navBottom .navBottomCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.header .navBottom .navBottomCont .bottomImg {
+  background: white;
+  border-radius: 50%;
+}
+.header .navBottom .navBottomCont .bottomText {
+  text-transform: capitalize;
+}
+.header .navBottom .navBottomCont .bottomText .name {
+  font-size: 20px;
+  color: #fff;
+}
+.header .navBottom .navBottomCont .bottomText .work {
+  font-size: 16px;
+  color: #f0f0fb;
+}
+.header .navBottom .navBottomCont .arrow {
+  font-size: 21px;
+  color: white;
+}/*# sourceMappingURL=style.module.css.map */
