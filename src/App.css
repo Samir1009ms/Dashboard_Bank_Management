@@ -13,56 +13,6 @@
   justify-content: end;
   min-height: 749px;
 }
-/* rect {
-  fill: #141332;
-}
-path {
-  fill: #6359e9 !important;
-} */
-
-/* .top {
-  background-color: red;
-}
-.top .style {
-  color: red;
-}
-.top .style .rccs {
-  color: red;
-  position: relative;
-}
-.top .style .rccs .rccs__card {
-  color: red;
-}
-.top .style .rccs .rccs__card .rccs__card--fron {
-  color: red;
-}
-.top .style .rccs .rccs__card .rccs__card--fron .rccs__card__back {
-  color: red;
-}
-.top .style .rccs .rccs__card .rccs__card--fron .rccs__issuer {
-  color: red;
-}
-.top .style .rccs .rccs__card .rccs__card--fron .rccs__cvc__fron {
-  color: red;
-}
-.top .style .rccs .rccs__card .rccs__card--fron .rccs__number {
-  color: red;
-  position: absolute;
-  top: 60%;
-  color: black !important;
-}
-.top .style .rccs .rccs__card .rccs__card--fron .rccs__name {
-  color: red;
-}
-.top .style .rccs .rccs__card .rccs__card--fron .rccs__expiry {
-  color: red;
-}
-.top .style .rccs .rccs__card .rccs__card--fron .rccs__chip {
-  color: red;
-} */
-
-/** ISSUERS **/
-/** Images **/
 .rccs {
   margin: 0 auto;
   perspective: 1000px;
@@ -342,4 +292,61 @@ path {
 .rccs--focused {
   font-weight: 700;
   opacity: 1 !important;
+}
+
+
+
+.slideshow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX("${(props) => currentPage * 100}%");
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
 }

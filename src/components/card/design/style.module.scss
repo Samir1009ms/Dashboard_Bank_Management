@@ -1,12 +1,14 @@
 .top {
-    background-color: red;
+    // background-color: red;
+    height: 183px;
 
-
+    width: 326px;
 
     .cardProduct {
 
         position: relative;
         overflow: hidden;
+        border-radius: 10px;
 
         &::after {
             content: "";

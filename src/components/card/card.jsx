@@ -27,8 +27,8 @@ export function Card() {
   async function Cartget() {
     try {
       const data = await cardApi.card();
-      console.log(data);
-      setCard(data);
+      console.log(data.splice(0,1));
+      setCard(data.splice(0,2));
     } catch {
       console.log("error");
     }

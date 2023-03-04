@@ -1,9 +1,9 @@
 import s from "./design/style.module.css";
 import { BiSearch } from "react-icons/bi";
 import { BsFillArrowDownLeftSquareFill } from "react-icons/bs";
-import {BsFillArrowDownRightSquareFill} from "react-icons/bs"
+import { BsFillArrowDownRightSquareFill } from "react-icons/bs";
+import { Card } from "../../components/card/card";
 export function Dashboard() {
-
   return (
     <section className={s.dashboard}>
       <div className={s.dashboardTop}>
@@ -35,8 +35,10 @@ export function Dashboard() {
               </p>
               <small className={s.faiz}>+1.29%</small>
             </div>
-            <div className={s.dashboardTotal} >
-            <BsFillArrowDownRightSquareFill className={`${s.dashboardArrow} ${s.Left}`} />
+            <div className={s.dashboardTotal}>
+              <BsFillArrowDownRightSquareFill
+                className={`${s.dashboardArrow} ${s.Left}`}
+              />
               <p className={s.dashboardPrice}>
                 <span className={s.Total}>Total Outcomme</span>
                 <span className={s.price}>$634.000</span>
@@ -47,7 +49,26 @@ export function Dashboard() {
           <div></div>
           <div></div>
         </div>
-        <div className={s.bottomRight}></div>
+        <div className={s.bottomRight}>
+          <div className={s.bottomRightTop}>
+            <h4 className={s.bottomRightName}>my card</h4>
+            <p className={s.bottomRightCardBalans}>card balance</p>
+            <p className={s.bottomRightPrice}>$15,595.015</p>
+            <div className={s.cardItem}>
+              <Card />
+              <p className={s.layers}>
+                <span className={s.pages}></span> 
+                <span className={s.pages}></span>
+                <span className={s.pages}></span>
+              </p>
+            </div>
+            <div className={s.bottomRightBtnCont}>
+              <button className={s.Btn}>Manage Cards</button>
+              <button className={`${s.Btn} ${s.BtnBg}`}>Transfer</button>
+            </div>
+          </div>
+          <div className={s.bottomRightAlt}></div>
+        </div>
       </div>
     </section>
   );

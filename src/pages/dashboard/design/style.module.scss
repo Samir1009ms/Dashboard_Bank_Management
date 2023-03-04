@@ -1,5 +1,5 @@
 .dashboard {
-    width: 81%;
+    width: 79%;
     padding-top: 25px;
     display: flex;
     flex-direction: column;
@@ -60,13 +60,15 @@
     .dashboardBottom {
 
         width: 100%;
+        display: flex;
 
         .bottomLeft {
-            width: 60%;
+            width: 64%;
 
             .bottomLeftTop {
                 display: flex;
-                justify-content: space-between;
+                // justify-content: space-between;
+                column-gap: 21px;
 
                 .dashboardTotal {
                     width: 47%;
@@ -121,6 +123,101 @@
                     }
                 }
             }
+        }
+
+        .bottomRight {
+            width: 34%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            background: #1D1D41;
+            padding: 20px 0px;
+
+
+            .bottomRightTop {
+                text-transform: capitalize;
+
+                .bottomRightName {
+                    font-size: 24px;
+                    line-height: 32px;
+
+                    color: #FFFFFF;
+                    margin-bottom: 18px;
+                }
+
+                .bottomRightCardBalans {
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #8C89B4;
+
+                }
+
+                .bottomRightPrice {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;
+
+                    color: #FFFFFF;
+                    margin-bottom: 15px;
+                }
+
+                .cardItem{
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .layers {
+                        height: 40px;
+                       display: flex;
+                       column-gap: 5px;
+                       align-items: center;
+                       justify-content: center;
+
+                        .pages{
+                            background: #6359E9;
+                            border-radius: 4px;
+                            width: 6px;
+                            height: 6px;
+                            display: inline-block;
+                            &:nth-child(1){
+                                background:  #6359E9;
+                                border-radius: 4px;
+                                width: 20px;
+                                height: 3px;
+                            }
+                        }
+                    }
+
+                }
+                
+
+                .bottomRightBtnCont {
+                    display: flex;
+                    column-gap: 12px;
+
+                    .Btn {
+                        background: #6359E9;
+                        border-radius: 10px;
+                        border: 1px solid #6359E9;
+                        outline: none;
+                        color: white;
+                        padding: 15px 33px;
+                        cursor: pointer;
+                    }
+
+                    .BtnBg {
+                        background: none;
+                        border-color: #FFf;
+                        padding: 15px 52px;
+
+                    }
+                }
+            }
+
+            .bottomRightAlt {}
+
         }
     }
 }
