@@ -1,60 +1,75 @@
 {
-    "card":[
-        {
-            "name": "testing card",
-            "number": "4169741394701443",
-            "cvc": "123",
-            "expiry": "11/23",
-            "focus": "true",
-            "balans":"1200"
-          },
-          {
-            "name": "testing card",
-            "number": "4169741394701421",
-            "cvc": "111",
-            "expiry": "11/2",
-            "focus": "false",
-            "balans":"1200"
-          },
-          {
-            "name": "testing card",
-            "number": "6011741394701421",
-            "cvc": "111",
-            "expiry": "11/2",
-            "focus": "false",
-            "balans":"1200"
-          },
-          {
-            "name": "testing card",
-            "number": "3036741394701421",
-            "cvc": "111",
-            "expiry": "11/2",
-            "focus": "false",
-            "balans":"1200"
-          },
-          {
-            "name": "testing card",
-            "number": "9792111194701421",
-            "cvc": "111",
-            "expiry": "11/2",
-            "focus": "false",
-            "balans":"1200"
-          },
-          {
-            "name": "testing card",
-            "number": "5167741394701421",
-            "cvc": "111",
-            "expiry": "11/2",
-            "focus": "false",
-            "balans":"1200"
-          },
-          {
-            "name": "testing card",
-            "number": "6211741394701421",
-            "cvc": "111",
-            "expiry": "11/2",
-            "focus": "false",
-            "balans":"1200"
-          }
-    ]
+  "card": [
+    {
+      "name": "testing card",
+      "number": "4169741394701443",
+      "cvc": "123",
+      "expiry": "11/23",
+      "focus": "true",
+      "balans": "1200"
+    },
+    {
+      "name": "testing card",
+      "number": "4169741394701421",
+      "cvc": "111",
+      "expiry": "11/2",
+      "focus": "false",
+      "balans": "1200"
+    },
+    {
+      "name": "testing card",
+      "number": "6011741394701421",
+      "cvc": "111",
+      "expiry": "11/2",
+      "focus": "false",
+      "balans": "1200"
+    },
+    {
+      "name": "testing card",
+      "number": "3036741394701421",
+      "cvc": "111",
+      "expiry": "11/2",
+      "focus": "false",
+      "balans": "1200"
+    },
+    {
+      "name": "testing card",
+      "number": "9792111194701421",
+      "cvc": "111",
+      "expiry": "11/2",
+      "focus": "false",
+      "balans": "1200"
+    },
+    {
+      "name": "testing card",
+      "number": "5167741394701421",
+      "cvc": "111",
+      "expiry": "11/2",
+      "focus": "false",
+      "balans": "1200"
+    },
+    {
+      "name": "testing card",
+      "number": "6211741394701421",
+      "cvc": "111",
+      "expiry": "11/2",
+      "focus": "false",
+      "balans": "1200"
+    }
+  ],
+  "sales": [
+    { "month": "January", "incomne": 100, "outcome": 500 },
+    { "month": "February", "incomne": 200, "outcome": 50 },
+    { "month": "March", "incomne": 300, "outcome": 900 },
+    { "month": "April", "incomne": 400, "outcome": 200 },
+    { "month": "May", "incomne": 500, "outcome": 800 },
+    { "month": "June", "incomne": 600 },
+    { "month": "July", "incomne": 700, "outcome": 2500 },
+    { "month": "August", "incomne": 800, "outcome": 2000 },
+    { "month": "September", "incomne": 900, "outcome": 1200 },
+    { "month": "October", "incomne": 1000, "outcome": 200 },
+    { "month": "November", "incomne": 1100, "outcome": 1300 },
+    { "month": "December", "incomne": 1200, "outcome": 200 }, 
+    { "month": "December", "incomne": 1200, "outcome": 200 }
+  ]
 }

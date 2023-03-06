@@ -4,6 +4,7 @@ import { BsFillArrowDownLeftSquareFill } from "react-icons/bs";
 import { BsFillArrowDownRightSquareFill } from "react-icons/bs";
 // import { Card } from "../../components/card/card";
 import { CardItem } from "../../components/card/cardItem";
+import { Account } from "../account/account";
 export function Dashboard() {
   return (
     <section className={s.dashboard}>
@@ -47,7 +48,10 @@ export function Dashboard() {
               <small className={`${s.faiz} ${s.red}`}>+1.29%</small>
             </div>
           </div>
-          <div></div>
+          <div>
+            <Account />
+
+          </div>
           <div></div>
         </div>
         <div className={s.bottomRight}>

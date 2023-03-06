@@ -27,7 +27,7 @@ export function Card({cardsPerPage,s}) {
   async function Cartget() {
     try {
       const data = await cardApi.card();
-      console.log(data.splice(0,1));
+      // console.log(data.splice(0,1));
       setCard(data);
     } catch {
       console.log("error");

@@ -8,5 +8,9 @@ export class cardApi{
     
         return (await axios.get(`${BASE_URL}card`)).data
     }
+    static async charts(){
+    
+        return (await axios.get(`${BASE_URL}sales`)).data
+    }
 
 }
