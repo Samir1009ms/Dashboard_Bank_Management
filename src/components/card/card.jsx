@@ -56,7 +56,7 @@ const currentCards = card && card.slice(indexOfFirstCard, indexOfLastCard);
   return (
    <div className={x.cardContainer}>
      <div className={x.top}>
-      {card &&
+      {card ?
         currentCards.map((e, i) => (
           <div className={x.cardProduct} key={i}>
             <ReactCreditCard
@@ -72,7 +72,7 @@ const currentCards = card && card.slice(indexOfFirstCard, indexOfLastCard);
               <p className={x.price}>$ {e.balans}</p>
             </div>
           </div>
-        ))}
+        )):<p>kart yoxdu</p>}
         
     </div>
     <Pagination

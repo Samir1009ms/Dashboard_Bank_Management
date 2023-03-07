@@ -5,6 +5,7 @@ import { BsFillArrowDownRightSquareFill } from "react-icons/bs";
 // import { Card } from "../../components/card/card";
 import { CardItem } from "../../components/card/cardItem";
 import { Account } from "../account/account";
+import { Transction } from "../../components/transction/transction";
 export function Dashboard() {
   return (
     <section className={s.dashboard}>
@@ -52,7 +53,10 @@ export function Dashboard() {
             <Account />
 
           </div>
-          <div></div>
+          <div>
+
+            <Transction/>
+          </div>
         </div>
         <div className={s.bottomRight}>
           <div className={s.bottomRightTop}>

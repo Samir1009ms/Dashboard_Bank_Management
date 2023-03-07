@@ -1,0 +1,77 @@
+.transction {
+  background: #1D1D41;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 21px 0;
+}
+.transction .transctionContainer {
+  width: 90%;
+}
+.transction .transctionContainer .transctionTop {
+  display: flex;
+  width: 100%;
+  gap: 39px;
+}
+.transction .transctionContainer .transctionTop .logo {
+  width: 25.56%;
+  font-weight: 600;
+  font-size: 20.8067px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  height: 38px;
+}
+.transction .transctionContainer .transctionTop .inputContainer {
+  display: flex;
+  width: 74.44%;
+}
+.transction .transctionContainer .transctionTop .inputContainer .transctionSearchContainer {
+  width: 40.866%;
+  position: relative;
+  height: 38px;
+}
+.transction .transctionContainer .transctionTop .inputContainer .transctionSearchContainer .search {
+  width: 100%;
+  background: #27264E;
+  border-radius: 8.66947px;
+  border: none;
+  height: 38px;
+}
+.transction .transctionContainer .transctionTop .inputContainer .transctionSearchContainer .searchIcon {
+  position: absolute;
+  top: 6.6px;
+  right: 10.93px;
+  width: 14px;
+  height: 26px;
+}
+.transction .transctionContainer .transctionTop .inputContainer .dateContainer {
+  width: 35.931%;
+  height: 38px;
+}
+.transction .transctionContainer .transctionTop .inputContainer .dateContainer .date {
+  width: 50%;
+}
+.transction .transctionContainer .transctionTop .inputContainer .dateContainer .date::-webkit-inner-spin-button {
+  display: none;
+}
+.transction .transctionContainer .transctionTop .inputContainer .dateContainer .date::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.transction .transctionContainer .transctionTop .inputContainer .dateContainer .dateIcon {
+  width: 40%;
+}
+.transction .transctionContainer .transctionBottom .transctionBottomTable .tableBottom .tableBottomList .imgCont {
+  padding: 10px;
+  display: inline-block;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.transction .transctionContainer .transctionBottom .transctionBottomTable .tableBottom .tableBottomList .imgCont .listImg {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.module.css.map */

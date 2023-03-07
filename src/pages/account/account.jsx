@@ -13,24 +13,36 @@ import { cardApi } from "../../api/api";
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 export function Account() {
-
-  const [chartData,setChartData]=useState()
+  const [chartData, setChartData] = useState();
 
   async function getData() {
     try {
-      const data =await cardApi.charts()
-      console.log("data",data);
-      setChartData(data)
+      const data = await cardApi.charts();
+      console.log("data", data);
+      setChartData(data);
     } catch {
-    console.log("error");
+      console.log("error");
     }
   }
 
-  console.log(chartData);
+  // console.log("datas", typeof(chartData[0].incomne));
 
-  useEffect(()=>{
-      getData()
-  },[])
+  let total=0
+  function price() {
+
+    ( chartData && chartData.map((e) => (
+      total= total+ e.incomne       
+      
+      )));
+    console.log(total); 
+
+    //! redux toolkite qiymeti at total price de cagir 
+  }
+
+  useEffect(() => {
+    getData();
+    price();
+  }, [price()]);
 
   const getMonthLabels = () => {
     const labels = [];
@@ -47,7 +59,7 @@ export function Account() {
     datasets: [
       {
         label: "Sales Number",
-        data: (chartData&& chartData.map(item=>item.incomne)),
+        data: chartData && chartData.map((item) => item.incomne),
         borderColor: "red",
         backgroundColor: ["#64CFF6"],
         borderWidth: 0,
@@ -58,7 +70,7 @@ export function Account() {
       },
       {
         label: "Sales Numberc",
-        data: (chartData&& chartData.map(item=>item.outcome)),
+        data: chartData && chartData.map((item) => item.outcome),
         borderColor: "red",
         backgroundColor: ["#6359E9"],
         borderWidth: 0,
@@ -116,7 +128,7 @@ export function Account() {
     <div>
       <Bar style={{ width: 600, height: 300 }} data={data} options={options} />
 
-        
+      <p>{total}</p>
     </div>
   );
 }

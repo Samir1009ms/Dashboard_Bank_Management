@@ -13,4 +13,9 @@ export class cardApi{
         return (await axios.get(`${BASE_URL}sales`)).data
     }
 
+    static async product(){
+    
+        return (await axios.get(`${BASE_URL}product`)).data
+    }
+
 }

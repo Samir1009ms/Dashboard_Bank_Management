@@ -116,6 +116,8 @@
   border-radius: 20px;
   background: #1D1D41;
   padding: 20px 0px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .dashboard .dashboardBottom .bottomRight .bottomRightTop {
   text-transform: capitalize;
