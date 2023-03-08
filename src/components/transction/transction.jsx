@@ -12,7 +12,7 @@ export function Transction() {
       console.log("dataProduct", data);
       setProducts(data);
     } catch {
-      console.log("error");
+      console.log("errordsds");
     }
   }
 
@@ -27,7 +27,7 @@ export function Transction() {
         <h3 className={s.logo}>transaction</h3>
         <div className={s.inputContainer}>
           <div className={s.transctionSearchContainer}>
-            <input className={s.search} type="text" />
+            <input placeholder="Search for anything...." className={s.search} type="text" />
             <IoSearchOutline className={s.searchIcon} />
           </div>
           <div className={s.dateContainer}>

@@ -12,6 +12,9 @@
 
         width: 90%;
 
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
         .transctionTop {
             display: flex;
             width: 100%;
@@ -34,7 +37,7 @@
 
                 .transctionSearchContainer {
 
-                    width: 40.866%;
+                    width: 45.698%;
                     position: relative;
                     height: 38px;
 
@@ -44,6 +47,16 @@
                         border-radius: 8.66947px;
                         border: none;
                         height: 38px;
+                        outline: none;
+                        text-indent: 13px;
+                        color: #AEABD8;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+
+                        &::placeholder {
+                            color: #AEABD8;
+                        }
                     }
 
                     .searchIcon {
@@ -52,7 +65,8 @@
                         right: 10.93px;
                         width: 14px;
                         height: 26px;
-
+                        color: #AEABD8;
+                        cursor: pointer;
                     }
                 }
 
@@ -84,15 +98,44 @@
 
 
             .transctionBottomTable {
+                width: 100%;
+                text-transform: capitalize;
+                font-weight: 400;
+                font-size: 12.1373px;
+                line-height: 16px;
 
                 .tableTop {
 
-                    .tableTopList {}
+                    .tableTopList {
+                        color: #AEABD8;
+
+                        &:nth-child(2) {
+                            columns: 2;
+                        }
+
+                        &:nth-child(3) {
+                            columns: 2;
+                        }
+
+                    }
                 }
 
                 .tableBottom {
+                    color: white;
+                    font-weight: 400;
+                    font-size: 13.8711px;
+                    line-height: 19px;
+                    // padding-top: 10px;
+                    //
 
                     .tableBottomList {
+                        &:first-child {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            margin-top: 15px;
+                            display: block;
+                        }
 
                         .imgCont {
                             padding: 10px;
